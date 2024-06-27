@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Paste</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Upload Your Paste</h1>
+    <form id="uploadForm" action="https://your-backend-service.com/upload" method="post" enctype="multipart/form-data">
+        <label for="pasteName">Paste Name:</label>
+        <input type="text" id="pasteName" name="pasteName" required><br>
+
+        <label for="creatorName">Creator Name:</label>
+        <input type="text" id="creatorName" name="creatorName" required><br>
+
+        <label for="pasteText">Paste Text:</label>
+        <textarea id="pasteText" name="pasteText" required></textarea><br>
+
+        <label for="icon">Icon:</label>
+        <input type="file" id="icon" name="icon" accept="image/*" required><br>
+
+        <button type="submit">Upload</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
